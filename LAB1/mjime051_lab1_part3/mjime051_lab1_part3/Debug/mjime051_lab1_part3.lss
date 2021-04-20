@@ -1,0 +1,199 @@
+
+mjime051_lab1_part3.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  0000013a  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000000e6  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  0000013a  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  0000016c  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000020  00000000  00000000  000001ac  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   0000085f  00000000  00000000  000001cc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 000007a6  00000000  00000000  00000a2b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000249  00000000  00000000  000011d1  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000024  00000000  00000000  0000141c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000401  00000000  00000000  00001440  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000000a8  00000000  00000000  00001841  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000010  00000000  00000000  000018e9  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	4b c0       	rjmp	.+150    	; 0x9c <__bad_interrupt>
+   6:	00 00       	nop
+   8:	49 c0       	rjmp	.+146    	; 0x9c <__bad_interrupt>
+   a:	00 00       	nop
+   c:	47 c0       	rjmp	.+142    	; 0x9c <__bad_interrupt>
+   e:	00 00       	nop
+  10:	45 c0       	rjmp	.+138    	; 0x9c <__bad_interrupt>
+  12:	00 00       	nop
+  14:	43 c0       	rjmp	.+134    	; 0x9c <__bad_interrupt>
+  16:	00 00       	nop
+  18:	41 c0       	rjmp	.+130    	; 0x9c <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	3f c0       	rjmp	.+126    	; 0x9c <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	3d c0       	rjmp	.+122    	; 0x9c <__bad_interrupt>
+  22:	00 00       	nop
+  24:	3b c0       	rjmp	.+118    	; 0x9c <__bad_interrupt>
+  26:	00 00       	nop
+  28:	39 c0       	rjmp	.+114    	; 0x9c <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	37 c0       	rjmp	.+110    	; 0x9c <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	35 c0       	rjmp	.+106    	; 0x9c <__bad_interrupt>
+  32:	00 00       	nop
+  34:	33 c0       	rjmp	.+102    	; 0x9c <__bad_interrupt>
+  36:	00 00       	nop
+  38:	31 c0       	rjmp	.+98     	; 0x9c <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	2f c0       	rjmp	.+94     	; 0x9c <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	2d c0       	rjmp	.+90     	; 0x9c <__bad_interrupt>
+  42:	00 00       	nop
+  44:	2b c0       	rjmp	.+86     	; 0x9c <__bad_interrupt>
+  46:	00 00       	nop
+  48:	29 c0       	rjmp	.+82     	; 0x9c <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	27 c0       	rjmp	.+78     	; 0x9c <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	25 c0       	rjmp	.+74     	; 0x9c <__bad_interrupt>
+  52:	00 00       	nop
+  54:	23 c0       	rjmp	.+70     	; 0x9c <__bad_interrupt>
+  56:	00 00       	nop
+  58:	21 c0       	rjmp	.+66     	; 0x9c <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	1f c0       	rjmp	.+62     	; 0x9c <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	1d c0       	rjmp	.+58     	; 0x9c <__bad_interrupt>
+  62:	00 00       	nop
+  64:	1b c0       	rjmp	.+54     	; 0x9c <__bad_interrupt>
+  66:	00 00       	nop
+  68:	19 c0       	rjmp	.+50     	; 0x9c <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	17 c0       	rjmp	.+46     	; 0x9c <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	15 c0       	rjmp	.+42     	; 0x9c <__bad_interrupt>
+  72:	00 00       	nop
+  74:	13 c0       	rjmp	.+38     	; 0x9c <__bad_interrupt>
+  76:	00 00       	nop
+  78:	11 c0       	rjmp	.+34     	; 0x9c <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	0f c0       	rjmp	.+30     	; 0x9c <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	0d c0       	rjmp	.+26     	; 0x9c <__bad_interrupt>
+  82:	00 00       	nop
+  84:	0b c0       	rjmp	.+22     	; 0x9c <__bad_interrupt>
+  86:	00 00       	nop
+  88:	09 c0       	rjmp	.+18     	; 0x9c <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e4       	ldi	r29, 0x40	; 64
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+  98:	02 d0       	rcall	.+4      	; 0x9e <main>
+  9a:	23 c0       	rjmp	.+70     	; 0xe2 <_exit>
+
+0000009c <__bad_interrupt>:
+  9c:	b1 cf       	rjmp	.-158    	; 0x0 <__vectors>
+
+0000009e <main>:
+#include <avr/io.h>
+
+
+int main(void)
+{
+    DDRA = 0x00; PORTA = 0xFF;
+  9e:	11 b8       	out	0x01, r1	; 1
+  a0:	8f ef       	ldi	r24, 0xFF	; 255
+  a2:	82 b9       	out	0x02, r24	; 2
+    DDRC = 0xFF; PORTC = 0x00;
+  a4:	87 b9       	out	0x07, r24	; 7
+  a6:	18 b8       	out	0x08, r1	; 8
+    unsigned char cntavail = 0x00;
+    unsigned char carSpace = 0x00;
+	unsigned char tmpc = 0x00;
+    while (1)
+    {
+	    carSpace = PINA;
+  a8:	40 b1       	in	r20, 0x00	; 0
+		tmpc = PINC; 
+  aa:	76 b1       	in	r23, 0x06	; 6
+  ac:	80 e0       	ldi	r24, 0x00	; 0
+  ae:	90 e0       	ldi	r25, 0x00	; 0
+	    cntavail = 0x00; // clear cntavail
+  b0:	60 e0       	ldi	r22, 0x00	; 0
+	    for (unsigned char i = 0;i < 4; i++)
+	    {
+		    if ((carSpace & (0x01 << i)) == 0)
+  b2:	50 e0       	ldi	r21, 0x00	; 0
+  b4:	9a 01       	movw	r18, r20
+  b6:	08 2e       	mov	r0, r24
+  b8:	02 c0       	rjmp	.+4      	; 0xbe <main+0x20>
+  ba:	35 95       	asr	r19
+  bc:	27 95       	ror	r18
+  be:	0a 94       	dec	r0
+  c0:	e2 f7       	brpl	.-8      	; 0xba <main+0x1c>
+  c2:	20 ff       	sbrs	r18, 0
+		    {
+			    cntavail++; // if PC3 ... PC0 have a 0 then the space is available so we increment cntavail
+  c4:	6f 5f       	subi	r22, 0xFF	; 255
+  c6:	01 96       	adiw	r24, 0x01	; 1
+    while (1)
+    {
+	    carSpace = PINA;
+		tmpc = PINC; 
+	    cntavail = 0x00; // clear cntavail
+	    for (unsigned char i = 0;i < 4; i++)
+  c8:	84 30       	cpi	r24, 0x04	; 4
+  ca:	91 05       	cpc	r25, r1
+  cc:	99 f7       	brne	.-26     	; 0xb4 <main+0x16>
+		    if ((carSpace & (0x01 << i)) == 0)
+		    {
+			    cntavail++; // if PC3 ... PC0 have a 0 then the space is available so we increment cntavail
+		    }
+	    }
+		if (cntavail == 0)
+  ce:	61 11       	cpse	r22, r1
+  d0:	04 c0       	rjmp	.+8      	; 0xda <main+0x3c>
+		{
+			tmpc = (tmpc & 0x70) + 0x80; // if no spaces are available, set PC7 to 1 and clear the rest of PC
+  d2:	67 2f       	mov	r22, r23
+  d4:	60 77       	andi	r22, 0x70	; 112
+  d6:	60 58       	subi	r22, 0x80	; 128
+  d8:	02 c0       	rjmp	.+4      	; 0xde <main+0x40>
+		} 
+		else
+		{
+			tmpc = (tmpc & 0x70) + cntavail; // else just set tmpc to cntavail
+  da:	70 77       	andi	r23, 0x70	; 112
+  dc:	67 0f       	add	r22, r23
+		}
+	    PORTC = tmpc; // set portc to tmpc
+  de:	68 b9       	out	0x08, r22	; 8
+    }
+  e0:	e3 cf       	rjmp	.-58     	; 0xa8 <main+0xa>
+
+000000e2 <_exit>:
+  e2:	f8 94       	cli
+
+000000e4 <__stop_program>:
+  e4:	ff cf       	rjmp	.-2      	; 0xe4 <__stop_program>

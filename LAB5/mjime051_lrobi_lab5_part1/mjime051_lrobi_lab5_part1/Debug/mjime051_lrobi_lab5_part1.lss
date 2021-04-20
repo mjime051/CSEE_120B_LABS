@@ -1,0 +1,260 @@
+
+mjime051_lrobi_lab5_part1.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  00000158  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000104  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  00000158  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000188  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000030  00000000  00000000  000001c8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   000008ff  00000000  00000000  000001f8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 0000081d  00000000  00000000  00000af7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000002c1  00000000  00000000  00001314  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000044  00000000  00000000  000015d8  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000433  00000000  00000000  0000161c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000000c8  00000000  00000000  00001a4f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000020  00000000  00000000  00001b17  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	4b c0       	rjmp	.+150    	; 0x9c <__bad_interrupt>
+   6:	00 00       	nop
+   8:	49 c0       	rjmp	.+146    	; 0x9c <__bad_interrupt>
+   a:	00 00       	nop
+   c:	47 c0       	rjmp	.+142    	; 0x9c <__bad_interrupt>
+   e:	00 00       	nop
+  10:	45 c0       	rjmp	.+138    	; 0x9c <__bad_interrupt>
+  12:	00 00       	nop
+  14:	43 c0       	rjmp	.+134    	; 0x9c <__bad_interrupt>
+  16:	00 00       	nop
+  18:	41 c0       	rjmp	.+130    	; 0x9c <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	3f c0       	rjmp	.+126    	; 0x9c <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	3d c0       	rjmp	.+122    	; 0x9c <__bad_interrupt>
+  22:	00 00       	nop
+  24:	3b c0       	rjmp	.+118    	; 0x9c <__bad_interrupt>
+  26:	00 00       	nop
+  28:	39 c0       	rjmp	.+114    	; 0x9c <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	37 c0       	rjmp	.+110    	; 0x9c <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	35 c0       	rjmp	.+106    	; 0x9c <__bad_interrupt>
+  32:	00 00       	nop
+  34:	33 c0       	rjmp	.+102    	; 0x9c <__bad_interrupt>
+  36:	00 00       	nop
+  38:	31 c0       	rjmp	.+98     	; 0x9c <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	2f c0       	rjmp	.+94     	; 0x9c <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	2d c0       	rjmp	.+90     	; 0x9c <__bad_interrupt>
+  42:	00 00       	nop
+  44:	2b c0       	rjmp	.+86     	; 0x9c <__bad_interrupt>
+  46:	00 00       	nop
+  48:	29 c0       	rjmp	.+82     	; 0x9c <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	27 c0       	rjmp	.+78     	; 0x9c <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	25 c0       	rjmp	.+74     	; 0x9c <__bad_interrupt>
+  52:	00 00       	nop
+  54:	23 c0       	rjmp	.+70     	; 0x9c <__bad_interrupt>
+  56:	00 00       	nop
+  58:	21 c0       	rjmp	.+66     	; 0x9c <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	1f c0       	rjmp	.+62     	; 0x9c <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	1d c0       	rjmp	.+58     	; 0x9c <__bad_interrupt>
+  62:	00 00       	nop
+  64:	1b c0       	rjmp	.+54     	; 0x9c <__bad_interrupt>
+  66:	00 00       	nop
+  68:	19 c0       	rjmp	.+50     	; 0x9c <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	17 c0       	rjmp	.+46     	; 0x9c <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	15 c0       	rjmp	.+42     	; 0x9c <__bad_interrupt>
+  72:	00 00       	nop
+  74:	13 c0       	rjmp	.+38     	; 0x9c <__bad_interrupt>
+  76:	00 00       	nop
+  78:	11 c0       	rjmp	.+34     	; 0x9c <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	0f c0       	rjmp	.+30     	; 0x9c <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	0d c0       	rjmp	.+26     	; 0x9c <__bad_interrupt>
+  82:	00 00       	nop
+  84:	0b c0       	rjmp	.+22     	; 0x9c <__bad_interrupt>
+  86:	00 00       	nop
+  88:	09 c0       	rjmp	.+18     	; 0x9c <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e4       	ldi	r29, 0x40	; 64
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+  98:	02 d0       	rcall	.+4      	; 0x9e <main>
+  9a:	32 c0       	rjmp	.+100    	; 0x100 <_exit>
+
+0000009c <__bad_interrupt>:
+  9c:	b1 cf       	rjmp	.-158    	; 0x0 <__vectors>
+
+0000009e <main>:
+	return ((position & (0x01 << k)) != 0);
+}
+
+int main(void)
+{
+	DDRA = 0x00; PORTA = 0x00; // Configure port A's 8 pins as inputs
+  9e:	11 b8       	out	0x01, r1	; 1
+  a0:	12 b8       	out	0x02, r1	; 2
+	DDRB = 0xFF; PORTB = 0x00; // Configure port C's 8 pins as outputs,
+  a2:	8f ef       	ldi	r24, 0xFF	; 255
+  a4:	84 b9       	out	0x04, r24	; 4
+  a6:	15 b8       	out	0x05, r1	; 5
+	unsigned char fuelLevel = 0x00;
+	unsigned char lightBits = 0x00;
+	while(1)
+	{
+		// 1) Read Inputs and assign to variables
+		fuelLevel = PINA & 0x0F;
+  a8:	80 b1       	in	r24, 0x00	; 0
+  aa:	8f 70       	andi	r24, 0x0F	; 15
+		lightBits = 0x00;
+		// 2) Perform Computation
+		if (fuelLevel > 0 && fuelLevel < 0x03)
+  ac:	9f ef       	ldi	r25, 0xFF	; 255
+  ae:	98 0f       	add	r25, r24
+  b0:	92 30       	cpi	r25, 0x02	; 2
+  b2:	b0 f0       	brcs	.+44     	; 0xe0 <main+0x42>
+		{
+			lightBits = SetBit(lightBits, 5, 1);
+		} 
+		else if (fuelLevel == 0x03 || fuelLevel == 0x04)
+  b4:	9d ef       	ldi	r25, 0xFD	; 253
+  b6:	98 0f       	add	r25, r24
+  b8:	92 30       	cpi	r25, 0x02	; 2
+  ba:	a0 f0       	brcs	.+40     	; 0xe4 <main+0x46>
+		{
+			lightBits = SetBit(lightBits, 5, 1);
+			lightBits = SetBit(lightBits, 4, 1);
+		} 
+		else if (fuelLevel == 0x05 || fuelLevel == 0x06)
+  bc:	9b ef       	ldi	r25, 0xFB	; 251
+  be:	98 0f       	add	r25, r24
+  c0:	92 30       	cpi	r25, 0x02	; 2
+  c2:	90 f0       	brcs	.+36     	; 0xe8 <main+0x4a>
+		{
+			lightBits = lightBits | 0x38;
+		} 
+		else if (fuelLevel >= 0x07 && fuelLevel <= 0x09)
+  c4:	99 ef       	ldi	r25, 0xF9	; 249
+  c6:	98 0f       	add	r25, r24
+  c8:	93 30       	cpi	r25, 0x03	; 3
+  ca:	80 f0       	brcs	.+32     	; 0xec <main+0x4e>
+		{
+			lightBits = lightBits | 0x3C;
+		} 
+		else if (fuelLevel >= 0x0A && fuelLevel <= 0x0C)
+  cc:	96 ef       	ldi	r25, 0xF6	; 246
+  ce:	98 0f       	add	r25, r24
+  d0:	93 30       	cpi	r25, 0x03	; 3
+  d2:	70 f0       	brcs	.+28     	; 0xf0 <main+0x52>
+		{
+			lightBits = lightBits | 0x3E;
+		} 
+		else if (fuelLevel >= 0x0D && fuelLevel <=0x0F)
+  d4:	93 ef       	ldi	r25, 0xF3	; 243
+  d6:	98 0f       	add	r25, r24
+  d8:	93 30       	cpi	r25, 0x03	; 3
+  da:	60 f4       	brcc	.+24     	; 0xf4 <main+0x56>
+		{
+			lightBits = lightBits | 0x3F;
+  dc:	9f e3       	ldi	r25, 0x3F	; 63
+  de:	0b c0       	rjmp	.+22     	; 0xf6 <main+0x58>
+		fuelLevel = PINA & 0x0F;
+		lightBits = 0x00;
+		// 2) Perform Computation
+		if (fuelLevel > 0 && fuelLevel < 0x03)
+		{
+			lightBits = SetBit(lightBits, 5, 1);
+  e0:	90 e2       	ldi	r25, 0x20	; 32
+  e2:	09 c0       	rjmp	.+18     	; 0xf6 <main+0x58>
+		} 
+		else if (fuelLevel == 0x03 || fuelLevel == 0x04)
+		{
+			lightBits = SetBit(lightBits, 5, 1);
+			lightBits = SetBit(lightBits, 4, 1);
+  e4:	90 e3       	ldi	r25, 0x30	; 48
+  e6:	07 c0       	rjmp	.+14     	; 0xf6 <main+0x58>
+		} 
+		else if (fuelLevel == 0x05 || fuelLevel == 0x06)
+		{
+			lightBits = lightBits | 0x38;
+  e8:	98 e3       	ldi	r25, 0x38	; 56
+  ea:	05 c0       	rjmp	.+10     	; 0xf6 <main+0x58>
+		} 
+		else if (fuelLevel >= 0x07 && fuelLevel <= 0x09)
+		{
+			lightBits = lightBits | 0x3C;
+  ec:	9c e3       	ldi	r25, 0x3C	; 60
+  ee:	03 c0       	rjmp	.+6      	; 0xf6 <main+0x58>
+		} 
+		else if (fuelLevel >= 0x0A && fuelLevel <= 0x0C)
+		{
+			lightBits = lightBits | 0x3E;
+  f0:	9e e3       	ldi	r25, 0x3E	; 62
+  f2:	01 c0       	rjmp	.+2      	; 0xf6 <main+0x58>
+	unsigned char lightBits = 0x00;
+	while(1)
+	{
+		// 1) Read Inputs and assign to variables
+		fuelLevel = PINA & 0x0F;
+		lightBits = 0x00;
+  f4:	90 e0       	ldi	r25, 0x00	; 0
+		else if (fuelLevel >= 0x0D && fuelLevel <=0x0F)
+		{
+			lightBits = lightBits | 0x3F;
+		}
+		
+		if (fuelLevel <= 0x04)
+  f6:	85 30       	cpi	r24, 0x05	; 5
+  f8:	08 f4       	brcc	.+2      	; 0xfc <main+0x5e>
+#include <avr/io.h>
+
+
+// Bit-access function
+unsigned char SetBit(unsigned char changedBin, unsigned char position, unsigned char newBit) {
+	return (newBit ? changedBin | (0x01 << position) : changedBin & ~(0x01 << position));
+  fa:	90 64       	ori	r25, 0x40	; 64
+		if (fuelLevel <= 0x04)
+		{
+			lightBits = SetBit(lightBits, 6, 1);
+		}
+		
+		PORTB = lightBits;
+  fc:	95 b9       	out	0x05, r25	; 5
+	}
+  fe:	d4 cf       	rjmp	.-88     	; 0xa8 <main+0xa>
+
+00000100 <_exit>:
+ 100:	f8 94       	cli
+
+00000102 <__stop_program>:
+ 102:	ff cf       	rjmp	.-2      	; 0x102 <__stop_program>
